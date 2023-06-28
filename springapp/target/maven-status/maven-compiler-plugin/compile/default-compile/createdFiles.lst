@@ -1,0 +1,6 @@
+com/example/springapp/SpringappApplication.class
+com/example/springapp/service/LeadService.class
+com/example/springapp/controller/LeadController.class
+com/example/springapp/service/LeadServiceInterface.class
+com/example/springapp/model/Leads.class
+com/example/springapp/repository/LeadRepository.class
