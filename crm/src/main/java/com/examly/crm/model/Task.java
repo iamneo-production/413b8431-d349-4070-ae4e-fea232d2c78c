@@ -1,0 +1,2 @@
+
+import jakarta.persistence.Entity;
