@@ -4,8 +4,6 @@ import java.util.List;
 
 import com.examly.crm.model.Opportunity;
 
-
-
 public interface OpportunityService {
 	public Opportunity addOpportunity(Long id,Opportunity opportunity);
     public List<Opportunity> getOpportunity();
