@@ -15,7 +15,7 @@ import com.examly.crm.service.EmailService;
 import java.util.*;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:8081")
 public class EmailController {
 	
 	private EmailService emailService;
