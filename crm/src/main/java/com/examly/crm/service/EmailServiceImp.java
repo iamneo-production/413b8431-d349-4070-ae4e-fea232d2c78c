@@ -1,6 +1,5 @@
 package com.examly.crm.service;
 
-
 import java.io.IOException;
 import java.util.List;
 
@@ -39,18 +38,11 @@ public class EmailServiceImp implements EmailService{
             }
             return "Emails sent to customers successfully.";
         } catch (Exception e) {
-//            // Handle exception
-//            System.out.println("Failed to send emails to customers");
-//            e.printStackTrace();
+
             return "Failed to send emails to customers.";
         }
 	}
 
-
-
-//    public void sendEmailsToCustomers() {
-//        
-//    }
 
     private void sendEmail(MultipartFile[] file,String to,String[] cc, String subject, String body) {
         try {
