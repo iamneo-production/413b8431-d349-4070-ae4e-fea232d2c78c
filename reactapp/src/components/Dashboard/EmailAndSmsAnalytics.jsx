@@ -15,7 +15,7 @@ const EmailAndSmsAnalytics = () => {
   
       const fetchEmailCount = async () => {
         try {
-            const response = await axios.get('http://localhost:8091/analytics/emailCount');
+            const response = await axios.get('http://localhost:8080/analytics/emailCount');
             setEmailCount(response.data);
         } catch (error) {
             console.error(error);
@@ -24,7 +24,7 @@ const EmailAndSmsAnalytics = () => {
   
       const fetchSMSCount = async () => {
         try {
-            const response = await axios.get('http://localhost:8091/analytics/smsCount');
+            const response = await axios.get('http://localhost:8080/analytics/smsCount');
             setSmsCount(response.data);
         } catch (error) {
             console.error(error);
