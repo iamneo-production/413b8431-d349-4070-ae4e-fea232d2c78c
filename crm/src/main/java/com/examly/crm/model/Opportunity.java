@@ -34,15 +34,7 @@ public class Opportunity {
 	
 	@OneToMany(mappedBy = "opportunity",cascade = CascadeType.ALL)
     private List<Sale> sales;
-//
-//    public List<Sales> getSales() {
-//        return sales;
-//    }
-//
-//    public void setSales(List<Sales> sales) {
-//        this.sales = sales;
-//    }
-	
+
 	public Opportunity() {
 		super();
 		
@@ -74,12 +66,8 @@ public class Opportunity {
 	public void setName(String name) {
 		this.name = name;
 	}
-//	public Customer getCustomer() {
-//		return customer;
-//	}
-//	public void setCustomer(Customer customer) {
-//		this.customer = customer;
-//	}
+
+	
 	public String getStatus() {
 		return status;
 	}
