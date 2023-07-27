@@ -29,7 +29,7 @@ const Tickets = ({tickets}) => {
   }, []);
 
   const loadTicket = async () => {
-      await axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket").then((response)=>{
+      await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket").then((response)=>{
         if(response.data){
           setAlltickets(response.data)
         }
@@ -63,7 +63,7 @@ const Tickets = ({tickets}) => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket/${id}`);
           setAlltickets((prevTickets) =>
             prevTickets.filter((ticket) => ticket.id !== id)
           );
