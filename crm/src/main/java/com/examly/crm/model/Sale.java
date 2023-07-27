@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 
 
-//import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 public class Sale {
