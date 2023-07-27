@@ -36,7 +36,7 @@ const AddSales = () => {
     e.preventDefault();
     console.log(formData);
     try{
-      await axios.post(`http://localhost:8080/customer/${formData.customer_id}/opportunity/${formData.opportunity_id}/sale`,
+      await axios.post(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer/${formData.customer_id}/opportunity/${formData.opportunity_id}/sale`,
       formData);
       // navigate("/sales");
       toast.success('Sale has been added successfully!📈', {
