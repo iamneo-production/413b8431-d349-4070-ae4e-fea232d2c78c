@@ -3,7 +3,7 @@ package com.examly.crm.model;
 import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "tickets")
