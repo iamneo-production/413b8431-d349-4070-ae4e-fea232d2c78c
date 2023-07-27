@@ -39,7 +39,7 @@ const AddOpportunity = () => {
         console.log(formData);
         console.log(custid,"custid");
         try{
-          await axios.post(`http://localhost:8080/customer/${custid}/opportunity`,formData);
+          await axios.post(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer/${custid}/opportunity`,formData);
           // navigate("/opportunities")
           toast.success('Opportunity has been added successfully!🚪', {
             position: "top-right",

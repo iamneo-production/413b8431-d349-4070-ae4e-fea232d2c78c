@@ -1,17 +1,10 @@
 package com.examly.crm.model;
 
 import java.time.LocalDate;
-//import java.util.List;
 import java.util.List;
 
-//import javax.persistence.CascadeType;
-//import javax.persistence.JoinColumn;
-//import javax.persistence.OneToMany;
-
-
-//import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import jakarta.persistence.*;
+import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 public class Opportunity {
