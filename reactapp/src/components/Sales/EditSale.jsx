@@ -57,7 +57,7 @@ const EditSale= () => {
         confirmButtonText: 'Yes, save it!'
       }).then(async (result)=>{
         if(result.isConfirmed){
-          await axios.put(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`, formData);
+          await axios.put(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`, formData);
           navigate("/sales");
           Swal.fire(
             'Changes saved!',
@@ -83,7 +83,7 @@ const EditSale= () => {
   const loadSale = async () => {
     try {
       const response = await axios.get(
-        `https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`
+        `https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`
       );
       const data = response.data;
       setFormData(data);
