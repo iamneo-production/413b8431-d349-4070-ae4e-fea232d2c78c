@@ -13,9 +13,24 @@ import java.util.Map;
 
 public interface SaleRepository extends JpaRepository<Sale,Long>{
 
-    @Query(value = "SELECT MONTH(date) AS month, SUM(amount) AS total_amount FROM sale WHERE YEAR(date) = :thisyear " +
-            "AND name = :eachObj GROUP BY MONTH(date) ORDER BY MONTH(date)",
+    @Query(value = "SELECT MONTH(date) AS month, SUM(amount) AS total_amount FROM sale WHERE YEAR(date) = YEAR(CURRENT_DATE()) " +
+            "AND name='Furniture' GROUP BY MONTH(date) ORDER BY MONTH(date)",
             nativeQuery = true)
-    List<Map<String, Object>> getDetails(@Param("thisyear") Year thisyear, @Param("eachObj") String eachObj);
+    List<Map<String, Object>> getDetails();
+
+    @Query(value = "SELECT MONTH(date) AS month, SUM(amount) AS total_amount FROM sale WHERE YEAR(date) = YEAR(CURRENT_DATE()) " +
+            "AND name='clothing' GROUP BY MONTH(date) ORDER BY MONTH(date)",
+            nativeQuery = true)
+    List<Map<String, Object>> getDetailsclothing();
+
+    @Query(value = "SELECT MONTH(date) AS month, SUM(amount) AS total_amount FROM sale WHERE YEAR(date) = YEAR(CURRENT_DATE()) " +
+            "AND name='Electronics' GROUP BY MONTH(date) ORDER BY MONTH(date)",
+            nativeQuery = true)
+    List<Map<String, Object>> getDetailsElectronics();
+
+    @Query(value = "SELECT MONTH(date) AS month, SUM(amount) AS total_amount FROM sale WHERE YEAR(date) = YEAR(CURRENT_DATE()) " +
+            "AND name='HealthProducts' GROUP BY MONTH(date) ORDER BY MONTH(date)",
+            nativeQuery = true)
+    List<Map<String, Object>> getDetailsHealthProducts();
 
 }
