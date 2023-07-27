@@ -13,7 +13,7 @@ import com.examly.crm.model.Sale;
 import com.examly.crm.service.SaleService;
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class SaleController {
 
 	@Autowired

@@ -13,8 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.examly.crm.model.Customer;
 import com.examly.crm.repository.CustomerRepository;
 
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeMessage;
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
 @Service
