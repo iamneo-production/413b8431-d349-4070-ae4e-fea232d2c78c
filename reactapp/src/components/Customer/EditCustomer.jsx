@@ -45,7 +45,7 @@ const EditCustomer = () => {
         confirmButtonText: 'Yes, save it!'
       }).then(async (result)=>{
         if(result.isConfirmed){
-          await axios.put(`http://localhost:8080/customer/${id}`, formData);   
+          await axios.put(`http://localhost:8091/customer/${id}`, formData);   
            navigate("/customers");
 
           Swal.fire(
@@ -70,7 +70,7 @@ const EditCustomer = () => {
 
   const loadCustomer = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/customer/${id}`);
+      const response = await axios.get(`http://localhost:8091/customer/${id}`);
       const data = response.data; 
   
       setFormData(data);

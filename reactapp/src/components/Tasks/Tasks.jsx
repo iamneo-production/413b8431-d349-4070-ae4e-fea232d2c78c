@@ -69,7 +69,7 @@ const Tasks = ({ tasks }) => {
           confirmButtonText: 'Yes, delete it!'
         }).then(async (result) => {
           if (result.isConfirmed) {
-            await axios.delete(`http://localhost:8091/task/${id}`);
+            await axios.delete(`http://localhost:8080/task/${id}`);
             setAlltasks((prevTasks) =>
             prevTasks.filter((task) => task.id !== id)
             );

@@ -32,7 +32,7 @@ const Customers = () => {
 
   const loadCustomer = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/customer");
+      const response = await axios.get("http://localhost:8091/customer");
       const data = response.data;
 
       setAllcustomers(data);
@@ -68,7 +68,7 @@ const Customers = () => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`http://localhost:8080/customer/${id}`);
+          await axios.delete(`http://localhost:8091/customer/${id}`);
           setAllcustomers((prevCustomers) =>
             prevCustomers.filter((customer) => customer.id !== id)
           );
