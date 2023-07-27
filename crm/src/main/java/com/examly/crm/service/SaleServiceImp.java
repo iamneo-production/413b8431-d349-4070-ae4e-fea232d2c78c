@@ -2,9 +2,6 @@ package com.examly.crm.service;
 
 import java.util.*;
 
-
-// import com.examly.crm.graphentity.MonthAmount;
-// import com.examly.crm.graphentity.SaleGraph;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

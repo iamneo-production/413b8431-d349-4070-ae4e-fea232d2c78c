@@ -6,7 +6,6 @@ import java.util.Map;
 // import com.examly.crm.graphentity.SaleGraph;
 import com.examly.crm.model.Sale;
 
-
 public interface SaleService {
 	public Sale addSale(Long customerid,Long opportunityid,Sale sale);
 	 public List<Sale> getSale();

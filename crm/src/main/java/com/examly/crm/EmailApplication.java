@@ -1,5 +1,17 @@
-package com.examly.springapp;
+package com.examly.crm;
 
-//import com.examly.springapp.service.EmailService;
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
+@SpringBootApplication
+//@EnableScheduling
+public class EmailApplication {
+//	implements CommandLineRunner
+//	@Autowired
+	public static void main(String args[]) {
+		SpringApplication.run(EmailApplication.class, args);
+	}
+
+
+}
