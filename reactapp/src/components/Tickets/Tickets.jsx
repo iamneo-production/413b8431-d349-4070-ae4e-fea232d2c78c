@@ -98,7 +98,7 @@ const Tickets = ({tickets}) => {
         progress: undefined,
         theme: "dark",
         });
-    await axios.post(`http://localhost:8080/raise/${cust_id}/ticket/${subject}/${body}`).then((response)=>{
+    await axios.post(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/raise/${cust_id}/ticket/${subject}/${body}`).then((response)=>{
       console.log(response,"Ticket raised");
     })
   }catch(error){
