@@ -1,7 +1,7 @@
 package com.examly.crm.model;
 
-// import javax.persistence.*;
-import jakarta.persistence.*;
+import javax.persistence.*;
+// import jakarta.persistence.*;
 
 @Entity
 @Table(name = "Leads")

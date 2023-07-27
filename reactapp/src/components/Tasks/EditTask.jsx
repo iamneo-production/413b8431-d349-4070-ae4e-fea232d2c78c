@@ -47,7 +47,7 @@ const EditTask = () => {
         confirmButtonText: 'Yes, save it!'
       }).then(async (result)=>{
         if(result.isConfirmed){
-          await axios.put(`http://localhost:8080/task/${id}`, formData);
+          await axios.put(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/task/${id}`, formData);
            navigate("/tasks");
           Swal.fire(
             'Changes saved!',
@@ -71,7 +71,7 @@ const EditTask = () => {
 
   const loadTask = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/task/${id}`);
+      const response = await axios.get(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/task/${id}`);
       const data = response.data; 
   
       setFormData(data);

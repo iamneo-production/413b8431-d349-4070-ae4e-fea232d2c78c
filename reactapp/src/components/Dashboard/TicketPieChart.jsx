@@ -15,7 +15,7 @@ const TicketPieChart = () => {
     const [resolvedTickets, setResolvedTickets] = useState(0);
   
     useEffect(() => {
-      axios.get("http://localhost:8080/ticket")
+      axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket")
         .then((response) => {
           setTickets(response.data);
           setLoadingTickets(false);
@@ -43,7 +43,7 @@ const TicketPieChart = () => {
   const [loadingTickets, setLoadingTickets] = useState(true);
   
   useEffect(() => {
-    axios.get("http://localhost:8080/ticket")
+    axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket")
       .then((response) => {
         setTickets(response.data);
         setLoadingTickets(false);
