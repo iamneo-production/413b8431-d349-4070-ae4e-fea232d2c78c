@@ -11,7 +11,7 @@ const OpportunityPieChart = () => {
     const [closedWin, setClosedWin] = useState(0);
     const [closedLoss, setClosedLoss] = useState(0);
     useEffect(() => {
-        axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity")
+        axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity")
           .then((response) => {
             setOpportunities(response.data);
             setLoadingOpportunities(false);
@@ -40,7 +40,7 @@ const OpportunityPieChart = () => {
         const [loadingOpportunities, setLoadingOpportunities] = useState(true);
         
         useEffect(() => {
-            axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity")
+            axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity")
             .then((response) => {
                 setOpportunities(response.data);
                 setLoadingOpportunities(false);

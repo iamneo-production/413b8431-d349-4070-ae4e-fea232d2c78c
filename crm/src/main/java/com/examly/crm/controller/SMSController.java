@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("https://8081-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class SMSController {
 
     static int sms_count;
