@@ -19,7 +19,7 @@ const EditSale= () => {
   const {id} = useParams(); 
 
   function gotoSalePage() {
-    navigate("/sale");
+    navigate("/Sales");
   }
 
   const otherSaleNames = [
