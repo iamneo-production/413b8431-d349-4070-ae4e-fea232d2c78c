@@ -32,7 +32,7 @@ const Customers = () => {
 
   const loadCustomer = async () => {
     try {
-      const response = await axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer");
+      const response = await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer");
       const data = response.data;
 
       setAllcustomers(data);
@@ -68,7 +68,7 @@ const Customers = () => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer/${id}`);
           setAllcustomers((prevCustomers) =>
             prevCustomers.filter((customer) => customer.id !== id)
           );
