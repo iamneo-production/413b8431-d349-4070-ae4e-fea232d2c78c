@@ -46,7 +46,7 @@ const EditTicket = () => {
             confirmButtonText: 'Yes, save it!'
           }).then(async (result)=>{
             if(result.isConfirmed){
-              await axios.put(`http://localhost:8080/ticket/${id}`, formData);
+              await axios.put(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket/${id}`, formData);
               navigate("/tickets");
 
               Swal.fire(
@@ -71,7 +71,7 @@ const EditTicket = () => {
     
       const loadTicket = async () => {
         try {
-          const response = await axios.get(`http://localhost:8080/ticket/${id}`);
+          const response = await axios.get(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket/${id}`);
           const data = response.data;
           setFormData(data);
         } catch (error) {

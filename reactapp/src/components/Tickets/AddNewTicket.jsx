@@ -34,7 +34,7 @@ const AddTicket = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-          await axios.post(`http://localhost:8080/customer/${formData.customer_id}/ticket`,formData);
+          await axios.post(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer/${formData.customer_id}/ticket`,formData);
           // navigate("/tickets");
           toast.success('Ticket has been added successfully!🔖', {
             position: "top-right",

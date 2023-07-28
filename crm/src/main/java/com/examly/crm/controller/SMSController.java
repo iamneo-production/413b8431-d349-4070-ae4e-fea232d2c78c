@@ -1,12 +1,12 @@
 package com.examly.crm.controller;
 
-import jakarta.annotation.PostConstruct;
+import javax.annotation.PostConstruct;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class SMSController {
 
     static int sms_count;

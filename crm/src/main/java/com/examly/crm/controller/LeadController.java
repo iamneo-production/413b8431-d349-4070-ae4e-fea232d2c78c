@@ -12,7 +12,7 @@ import com.examly.crm.service.LeadService;
 
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class LeadController {
 
     @Autowired

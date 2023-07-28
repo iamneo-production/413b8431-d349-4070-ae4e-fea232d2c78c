@@ -33,7 +33,7 @@ const Tasks = ({ tasks }) => {
 
   const loadTask = async () => {
     try{
-      const response = await axios.get("http://localhost:8080/task");
+      const response = await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/task");
     const data = response.data; 
 
     setAlltasks(data);
@@ -69,7 +69,7 @@ const Tasks = ({ tasks }) => {
           confirmButtonText: 'Yes, delete it!'
         }).then(async (result) => {
           if (result.isConfirmed) {
-            await axios.delete(`http://localhost:8080/task/${id}`);
+            await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/task/${id}`);
             setAlltasks((prevTasks) =>
             prevTasks.filter((task) => task.id !== id)
             );

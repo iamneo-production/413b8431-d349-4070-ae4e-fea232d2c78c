@@ -33,7 +33,7 @@ const AddCustomer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8091/customer", formData);
+      await axios.post("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/customer", formData);
       // navigate("/customers");
       toast.success('Customer has been added successfully!🤸🏻', {
         position: "top-right",

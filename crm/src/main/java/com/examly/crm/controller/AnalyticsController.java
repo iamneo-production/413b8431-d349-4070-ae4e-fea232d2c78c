@@ -1,13 +1,13 @@
-package com.examly.springapp.controller;
+package com.examly.crm.controller;
 
-import com.examly.springapp.service.AnalyticalService;
+import com.examly.crm.service.AnalyticalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class AnalyticsController {
 
     @Autowired

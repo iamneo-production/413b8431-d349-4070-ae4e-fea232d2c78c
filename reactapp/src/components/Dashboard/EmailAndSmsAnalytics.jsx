@@ -15,7 +15,7 @@ const EmailAndSmsAnalytics = () => {
   
       const fetchEmailCount = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/analytics/emailCount');
+            const response = await axios.get('https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/analytics/emailCount');
             setEmailCount(response.data);
         } catch (error) {
             console.error(error);
@@ -24,7 +24,7 @@ const EmailAndSmsAnalytics = () => {
   
       const fetchSMSCount = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/analytics/smsCount');
+            const response = await axios.get('https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/analytics/smsCount');
             setSmsCount(response.data);
         } catch (error) {
             console.error(error);

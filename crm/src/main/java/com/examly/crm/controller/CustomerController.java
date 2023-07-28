@@ -16,7 +16,7 @@ import com.examly.crm.service.CustomerService;
 
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class CustomerController {
 
 	@Autowired

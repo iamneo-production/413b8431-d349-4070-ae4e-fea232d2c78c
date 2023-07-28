@@ -34,7 +34,7 @@ const Leads = ({ leads }) => {
 
   const loadCustomer = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/lead");
+      const response = await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead");
       const data = response.data; 
   
       setAllleads(data);
@@ -70,7 +70,7 @@ const Leads = ({ leads }) => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`http://localhost:8080/lead/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead/${id}`);
           setAllleads((prevLeads) =>
             prevLeads.filter((lead) => lead.id !== id)
           );

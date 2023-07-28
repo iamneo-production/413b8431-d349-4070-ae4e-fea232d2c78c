@@ -45,7 +45,7 @@ const EditLead = () => {
         confirmButtonText: 'Yes, save it!'
       }).then(async (result)=>{
         if(result.isConfirmed){
-          await axios.put(`http://localhost:8080/lead/${id}`, formData);
+          await axios.put(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead/${id}`, formData);
     navigate("/leads");
 
           Swal.fire(
@@ -70,7 +70,7 @@ const EditLead = () => {
 
   const loadLead = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/lead/${id}`);
+      const response = await axios.get(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead/${id}`);
       const data = response.data; 
   
       setFormData(data);

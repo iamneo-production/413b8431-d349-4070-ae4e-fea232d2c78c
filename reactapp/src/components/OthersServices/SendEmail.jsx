@@ -27,7 +27,7 @@ const SendEmail = () => {
 
   const fetchEmails = async () => {
     await axios
-      .get("http://localhost:8080/getemails")
+      .get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/getemails")
       .then((response) => {
         if (response.data.length !== 0) {
           setEmails(response.data);
@@ -81,7 +81,7 @@ const SendEmail = () => {
     formDataToSend.append("cc", "crmsendfrom@google.com");
 
     try {
-      await axios.post("http://localhost:8080/send", formDataToSend);
+      await axios.post("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/send", formDataToSend);
     //   toast.success("Email sent successfully!", { position: "left" });
     //   alert("emails sent successfully");
     //   navigate("/dashboard");

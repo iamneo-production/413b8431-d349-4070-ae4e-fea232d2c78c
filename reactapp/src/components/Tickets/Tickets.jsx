@@ -29,7 +29,7 @@ const Tickets = ({tickets}) => {
   }, []);
 
   const loadTicket = async () => {
-      await axios.get("http://localhost:8080/ticket").then((response)=>{
+      await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket").then((response)=>{
         if(response.data){
           setAlltickets(response.data)
         }
@@ -63,7 +63,7 @@ const Tickets = ({tickets}) => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`http://localhost:8080/ticket/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/ticket/${id}`);
           setAlltickets((prevTickets) =>
             prevTickets.filter((ticket) => ticket.id !== id)
           );
@@ -98,7 +98,7 @@ const Tickets = ({tickets}) => {
         progress: undefined,
         theme: "dark",
         });
-    await axios.post(`http://localhost:8080/raise/${cust_id}/ticket/${subject}/${body}`).then((response)=>{
+    await axios.post(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/raise/${cust_id}/ticket/${subject}/${body}`).then((response)=>{
       console.log(response,"Ticket raised");
     })
   }catch(error){

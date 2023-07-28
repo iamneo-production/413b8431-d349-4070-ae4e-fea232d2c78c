@@ -11,7 +11,7 @@ import com.examly.crm.model.Opportunity;
 import com.examly.crm.service.OpportunityService;
 
 @RestController
-@CrossOrigin("http://localhost:8081")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class OpportunityContoller {
 
 	@Autowired

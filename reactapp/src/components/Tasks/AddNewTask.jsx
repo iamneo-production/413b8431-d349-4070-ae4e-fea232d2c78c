@@ -34,7 +34,7 @@ const AddTask = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      await axios.post("http://localhost:8080/task",formData);
+      await axios.post("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/task",formData);
       // navigate("/tasks");
       toast.success('Task has been added successfully!🧾', {
         position: "top-right",

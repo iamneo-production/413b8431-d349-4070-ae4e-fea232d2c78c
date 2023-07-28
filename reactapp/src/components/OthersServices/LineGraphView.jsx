@@ -15,7 +15,7 @@ const LineGraphView = () =>{
 
     const loadGraphData =async () =>{
         try {
-            const response = await axios.get(`http://localhost:8080/sale/graphs`);
+            const response = await axios.get(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/graphs`);
             const data = response.data;
             setLineData(data);
             console.log(data);
