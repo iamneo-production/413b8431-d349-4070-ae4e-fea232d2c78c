@@ -73,14 +73,15 @@ public  class SaleServiceImp implements SaleService{
 	@Override
 	public List<Map<String, Object>> getSalesGraph() {
 		List<Map<String, Object>> responseData = new ArrayList<>();
-		Year thisyear = Year.now();
+		
 
 		// Fetch data from the repository
-		List<Map<String, Object>> databaseDataFurniture = this.saleRepository.getDetails(thisyear,"Furniture");
-		List<Map<String, Object>> databaseDataclothing = this.saleRepository.getDetails(thisyear,"clothing");
-		List<Map<String, Object>> databaseDataElectronics = this.saleRepository.getDetails(thisyear,"Electronics");
-		List<Map<String, Object>> databaseDataHealthProducts = this.saleRepository.getDetails(thisyear,"HealthProducts");
+		List<Map<String, Object>> databaseDataFurniture = this.saleRepository.getDetails();
+		List<Map<String, Object>> databaseDataclothing = this.saleRepository.getDetailsclothing();
+		List<Map<String, Object>> databaseDataElectronics = this.saleRepository.getDetailsElectronics();
+		List<Map<String, Object>> databaseDataHealthProducts = this.saleRepository.getDetailsHealthProducts();
 
+		System.out.println(databaseDataHealthProducts);
 
 		// Create the response format
 		Map<String, Object> furnitureData = new HashMap<>();
