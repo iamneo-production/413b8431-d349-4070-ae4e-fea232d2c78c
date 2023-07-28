@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
- @CrossOrigin("https://8081-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io")
+ @CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class TaskController {
 
     @Autowired

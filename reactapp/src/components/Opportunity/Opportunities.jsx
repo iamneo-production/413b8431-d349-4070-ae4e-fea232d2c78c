@@ -30,7 +30,7 @@ const Opportunity = ({ opportunities }) => {
 
   const loadOpportunity = async () => {
     try {
-      const response = await axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity");
+      const response = await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity");
       const data = response.data; 
   
       setAllopportunities(data);
@@ -66,7 +66,7 @@ const Opportunity = ({ opportunities }) => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`);
           setAllopportunities((prevOpportunities) =>
             prevOpportunities.filter((opportunity) => opportunity.id !== id)
           );

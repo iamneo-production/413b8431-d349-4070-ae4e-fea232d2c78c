@@ -29,7 +29,7 @@ const Sales = ({ sales }) => {
 
   const loadSale = async () => {
     try {
-      const response = await axios.get("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale");
+      const response = await axios.get("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale");
       const data = response.data; 
   
       setAllsales(data);
@@ -64,7 +64,7 @@ const Sales = ({ sales }) => {
         confirmButtonText: 'Yes, delete it!'
       }).then(async (result) => {
         if (result.isConfirmed) {
-          await axios.delete(`https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`);
+          await axios.delete(`https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/sale/${id}`);
           setAllsales((prevSales) =>
             prevSales.filter((sale) => sale.id !== id)
           );

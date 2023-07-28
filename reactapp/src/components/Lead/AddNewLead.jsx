@@ -33,7 +33,7 @@ const AddLead = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead", formData);
+      await axios.post("https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/lead", formData);
       // navigate("/leads");
       toast.success('Lead has been added successfully!🫅🏻', {
         position: "top-right",
