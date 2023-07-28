@@ -8,7 +8,7 @@ import com.examly.crm.model.Customer;
 
 public interface CustomerRepository extends JpaRepository<Customer,Long>{
 	
-	@Query(value="SELECT c.email From Customer c",nativeQuery = true)
+	@Query(value="SELECT email From customer",nativeQuery = true)
 	List<String> findAllEmails();
 
 }

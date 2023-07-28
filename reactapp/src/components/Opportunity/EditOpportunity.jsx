@@ -40,7 +40,7 @@ const EditOpportunity = () => {
       }).then(async (result)=>{
         if(result.isConfirmed){
           await axios.put(
-            `https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`,
+            `https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`,
             formData);
           // console.log(response.data);
           navigate("/opportunities");
@@ -67,7 +67,7 @@ const EditOpportunity = () => {
   const loadOpportunity = async () => {
     try {
       const response = await axios.get(
-        `https://8080-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`
+        `https://8080-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io/opportunity/${id}`
       );
       const data = response.data;
       setFormData(data);

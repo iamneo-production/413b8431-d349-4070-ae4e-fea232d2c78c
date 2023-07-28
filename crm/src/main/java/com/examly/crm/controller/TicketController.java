@@ -23,7 +23,7 @@ import com.examly.crm.repository.TicketRepository;
 import com.examly.crm.service.TicketService;
 
 @RestController
-@CrossOrigin("https://8081-afeeccafebfbbcdcaeeaebabeaeaadbdbabf.project.examly.io")
+@CrossOrigin("https://8081-edfdbecdceefbfbcdcaeeaebabeaeaadbdbabf.project.examly.io")
 public class TicketController {
 
 	@Autowired
